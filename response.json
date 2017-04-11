@@ -1,0 +1,1285 @@
+{
+   "response" : {
+      "hitsperpage" : 100,
+      "searchtype" : "endpoint",
+      "hitsessionid" : "hitsendpointmedia/catalogs/public",
+      "pages" : 1,
+      "query" : {
+         "search" : "id:*",
+         "friendly" : "ID:*"
+      },
+      "page" : 1,
+      "totalhits" : 88,
+      "status" : "ok"
+   },
+   "results" : [
+      {
+         "samplerequest" : "{      \n     \"name\": \"JSON Assets Test\"\n     }",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "moduleasset",
+            "name" : "Assets"
+         },
+         "name" : "Create a new Assets",
+         "url" : "/mediadb/services/module/asset/create",
+         "description" : "Creates a new record with or without an ID.",
+         "id" : "moduleassetcreate"
+      },
+      {
+         "url" : "/mediadb/services/module/asset/search",
+         "name" : "Search for Assets",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "name" : "Assets",
+            "id" : "moduleasset"
+         },
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      ",
+         "id" : "moduleassetsearch"
+      },
+      {
+         "id" : "moduleassetretrieve",
+         "url" : "/mediadb/services/module/asset/data/101",
+         "httpmethod" : {
+            "id" : "GET",
+            "name" : "GET"
+         },
+         "docsection" : {
+            "id" : "moduleasset",
+            "name" : "Assets"
+         },
+         "name" : "Load Data "
+      },
+      {
+         "id" : "moduleassetupdate",
+         "httpmethod" : {
+            "id" : "PUT",
+            "name" : "PUT"
+         },
+         "docsection" : {
+            "name" : "Assets",
+            "id" : "moduleasset"
+         },
+         "name" : "Update Data",
+         "samplerequest" : "{  \"name\": \"JSON NAME CHANGE\"\n   }",
+         "description" : "Update data with key/values in request",
+         "url" : "/mediadb/services/module/asset/data/101"
+      },
+      {
+         "id" : "moduleassetdelete",
+         "docsection" : {
+            "id" : "moduleasset",
+            "name" : "Assets"
+         },
+         "httpmethod" : {
+            "id" : "DELETE",
+            "name" : "DELETE"
+         },
+         "name" : "Delete Data",
+         "url" : "/mediadb/services/module/asset/data/101",
+         "description" : "Delete Data"
+      },
+      {
+         "name" : "Create a new Projects",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "name" : "Projects",
+            "id" : "moduleproject"
+         },
+         "samplerequest" : "{      \n     \"name\": \"JSON Projects Test\"\n     }",
+         "description" : "Creates a new record with or without an ID.",
+         "url" : "/mediadb/services/module/project/create",
+         "id" : "moduleprojectcreate"
+      },
+      {
+         "id" : "moduleprojectsearch",
+         "url" : "/mediadb/services/module/project/search",
+         "docsection" : {
+            "id" : "moduleproject",
+            "name" : "Projects"
+         },
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "name" : "Search for Projects",
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      "
+      },
+      {
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "docsection" : {
+            "id" : "moduleproject",
+            "name" : "Projects"
+         },
+         "name" : "Load Data ",
+         "url" : "/mediadb/services/module/project/data/101",
+         "id" : "moduleprojectretrieve"
+      },
+      {
+         "id" : "moduleprojectupdate",
+         "samplerequest" : "{  \"name\": \"JSON NAME CHANGE\"\n   }",
+         "httpmethod" : {
+            "name" : "PUT",
+            "id" : "PUT"
+         },
+         "name" : "Update Data",
+         "docsection" : {
+            "id" : "moduleproject",
+            "name" : "Projects"
+         },
+         "url" : "/mediadb/services/module/project/data/101",
+         "description" : "Update data with key/values in request"
+      },
+      {
+         "httpmethod" : {
+            "id" : "DELETE",
+            "name" : "DELETE"
+         },
+         "docsection" : {
+            "name" : "Projects",
+            "id" : "moduleproject"
+         },
+         "name" : "Delete Data",
+         "description" : "Delete Data",
+         "url" : "/mediadb/services/module/project/data/101",
+         "id" : "moduleprojectdelete"
+      },
+      {
+         "samplerequest" : "{      \n     \"name\": \"JSON Orders Test\"\n     }",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "name" : "Orders",
+            "id" : "moduleorder"
+         },
+         "name" : "Create a new Orders",
+         "url" : "/mediadb/services/module/order/create",
+         "description" : "Creates a new record with or without an ID.",
+         "id" : "moduleordercreate"
+      },
+      {
+         "id" : "moduleordersearch",
+         "url" : "/mediadb/services/module/order/search",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Search for Orders",
+         "docsection" : {
+            "name" : "Orders",
+            "id" : "moduleorder"
+         },
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      "
+      },
+      {
+         "httpmethod" : {
+            "id" : "GET",
+            "name" : "GET"
+         },
+         "docsection" : {
+            "id" : "moduleorder",
+            "name" : "Orders"
+         },
+         "name" : "Load Data ",
+         "url" : "/mediadb/services/module/order/data/101",
+         "id" : "moduleorderretrieve"
+      },
+      {
+         "id" : "moduleorderupdate",
+         "docsection" : {
+            "id" : "moduleorder",
+            "name" : "Orders"
+         },
+         "httpmethod" : {
+            "name" : "PUT",
+            "id" : "PUT"
+         },
+         "name" : "Update Data",
+         "samplerequest" : "{  \"name\": \"JSON NAME CHANGE\"\n   }",
+         "description" : "Update data with key/values in request",
+         "url" : "/mediadb/services/module/order/data/101"
+      },
+      {
+         "httpmethod" : {
+            "name" : "DELETE",
+            "id" : "DELETE"
+         },
+         "docsection" : {
+            "id" : "moduleorder",
+            "name" : "Orders"
+         },
+         "name" : "Delete Data",
+         "description" : "Delete Data",
+         "url" : "/mediadb/services/module/order/data/101",
+         "id" : "moduleorderdelete"
+      },
+      {
+         "id" : "modulelibrarycreate",
+         "description" : "Creates a new record with or without an ID.",
+         "url" : "/mediadb/services/module/library/create",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Create a new Libraries",
+         "docsection" : {
+            "name" : "Projects",
+            "id" : "modulelibrary"
+         },
+         "samplerequest" : "{      \n     \"name\": \"JSON Libraries Test\"\n     }"
+      },
+      {
+         "url" : "/mediadb/services/module/library/search",
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      ",
+         "name" : "Search for Libraries",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "id" : "modulelibrary",
+            "name" : "Projects"
+         },
+         "id" : "modulelibrarysearch"
+      },
+      {
+         "url" : "/mediadb/services/module/library/data/101",
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "name" : "Load Data ",
+         "docsection" : {
+            "id" : "modulelibrary",
+            "name" : "Projects"
+         },
+         "id" : "modulelibraryretrieve"
+      },
+      {
+         "id" : "modulelibraryupdate",
+         "description" : "Update data with key/values in request",
+         "url" : "/mediadb/services/module/library/data/101",
+         "httpmethod" : {
+            "id" : "PUT",
+            "name" : "PUT"
+         },
+         "name" : "Update Data",
+         "docsection" : {
+            "name" : "Projects",
+            "id" : "modulelibrary"
+         },
+         "samplerequest" : "{  \"name\": \"JSON NAME CHANGE\"\n   }"
+      },
+      {
+         "id" : "modulelibrarydelete",
+         "description" : "Delete Data",
+         "url" : "/mediadb/services/module/library/data/101",
+         "name" : "Delete Data",
+         "httpmethod" : {
+            "name" : "DELETE",
+            "id" : "DELETE"
+         },
+         "docsection" : {
+            "name" : "Projects",
+            "id" : "modulelibrary"
+         }
+      },
+      {
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "name" : "Create a new Collections",
+         "docsection" : {
+            "name" : "Collections",
+            "id" : "modulelibrarycollection"
+         },
+         "samplerequest" : "{      \n     \"name\": \"JSON Collections Test\"\n     }",
+         "description" : "Creates a new record with or without an ID.",
+         "url" : "/mediadb/services/module/librarycollection/create",
+         "id" : "modulelibrarycollectioncreate"
+      },
+      {
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "id" : "modulelibrarycollection",
+            "name" : "Collections"
+         },
+         "name" : "Search for Collections",
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      ",
+         "url" : "/mediadb/services/module/librarycollection/search",
+         "id" : "modulelibrarycollectionsearch"
+      },
+      {
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "name" : "Load Data ",
+         "docsection" : {
+            "name" : "Collections",
+            "id" : "modulelibrarycollection"
+         },
+         "url" : "/mediadb/services/module/librarycollection/data/101",
+         "id" : "modulelibrarycollectionretrieve"
+      },
+      {
+         "description" : "Update data with key/values in request",
+         "url" : "/mediadb/services/module/librarycollection/data/101",
+         "docsection" : {
+            "id" : "modulelibrarycollection",
+            "name" : "Collections"
+         },
+         "httpmethod" : {
+            "id" : "PUT",
+            "name" : "PUT"
+         },
+         "name" : "Update Data",
+         "samplerequest" : "{  \"name\": \"JSON NAME CHANGE\"\n   }",
+         "id" : "modulelibrarycollectionupdate"
+      },
+      {
+         "httpmethod" : {
+            "id" : "DELETE",
+            "name" : "DELETE"
+         },
+         "docsection" : {
+            "name" : "Collections",
+            "id" : "modulelibrarycollection"
+         },
+         "name" : "Delete Data",
+         "url" : "/mediadb/services/module/librarycollection/data/101",
+         "description" : "Delete Data",
+         "id" : "modulelibrarycollectiondelete"
+      },
+      {
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Upload File",
+         "samplerequest" : "{  \n    \"id\":\"101\",  \n     \"assettype\": \"article\",     \"keywords\": [\"animals\",\"bird\"],        \n     \"description\": \"TEST\",      \"creator\":{  \n      \t\"id\":\"billmoyers1\",     \t\"firstname\":\"Bill\",     \t\"lastname\":\"Moyers\"         },   \n     \"category\": {         \"id\": \"index\"     },     \"editstatus\": 6 }",
+         "id" : "uploadasset",
+         "docsection" : {
+            "id" : "moduleasset",
+            "name" : "Assets"
+         },
+         "description" : "Upload new local file to DAM",
+         "url" : "/${applicationid}/services/module/asset/create",
+         "uploadfile" : "true"
+      },
+      {
+         "samplerequest" : "{\n  \"assettype\": \"article\",\n  \"fileformat\": \"jpg\",\n  \"keywords\": \"animals\",\n  \"fetchURL\": \"http://o.onionstatic.com/images/25/25530/16x9/700.jpg?8747\",\n\n  \"description\": \"Image of a squirrel who waterskis\",\n  \"purpose\": {\n    \"id\": \"sales\",\n    \"name\": \"Sales Channel\"\n  },\n  \"category\": {\n    \"id\": \"index\"\n  },\n  \"editstatus\": 6\n}",
+         "name" : "Fetch External Asset",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "name" : "Assets",
+            "id" : "moduleasset"
+         },
+         "url" : "/${applicationid}/services/module/asset/data/create",
+         "description" : "This endpoint creates a new asset on the server and returns the resulting object.  Nested lists can be created automatically.\n\nIf you include a \"localPath\" parameter, EnterMedia will copy the file at that path into the DAM. \n\nIf you include a \"fetchURL\" parameter, EnterMedia will download the file at that URL into the DAM. \n",
+         "id" : "createasset"
+      },
+      {
+         "id" : "moduleassetfiltersearch",
+         "url" : "/${applicationid}/services/module/asset/search",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "id" : "moduleasset",
+            "name" : "Assets"
+         },
+         "name" : "List Search Filters",
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n    \t    \"showfilters\":\"true\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      "
+      },
+      {
+         "httpmethod" : {
+            "name" : "PUT",
+            "id" : "PUT"
+         },
+         "docsection" : {
+            "name" : "Assets",
+            "id" : "moduleasset"
+         },
+         "name" : "Update Purpose",
+         "samplerequest" : "{     \"assettype\": \"article\",    \n \"fileformat\":\"jpg\",    \n \"keywords\": \"animals\",     \n \"name\": \"Updated Name\",     \n \"description\": \"TEST\",    \n \"purpose\":{   \t\"id\":\"pressprelease\",  \"name\":\"Press Release\"  },   \n \"category\": {         \"id\": \"index\"     },     \n \"editstatus\": 6 }",
+         "description" : "Updates an existing asset",
+         "url" : "/${applicationid}/services/module/asset/data/101",
+         "id" : "customupdateasset"
+      },
+      {
+         "id" : "convertasset",
+         "samplerequest" : "{   \"assetid\": \"101\",   \"presetid\": \"imagepreviewfpo\" }",
+         "docsection" : {
+            "id" : "assetmedia",
+            "name" : "Asset Media"
+         },
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "name" : "Run a conversion",
+         "url" : "/${applicationid}/services/module/asset/media/convertasset",
+         "description" : "Run an asset conversion.  Returns a path to the generated file."
+      },
+      {
+         "samplerequest" : "{\"assetid\":\"101\"}",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Conversion Override",
+         "id" : "customthumb",
+         "url" : "/${applicationid}/services/module/asset/media/customthumb",
+         "description" : "Creates custom thumbnails for assets",
+         "docsection" : {
+            "id" : "assetmedia",
+            "name" : "Asset Media"
+         },
+         "uploadfile" : "true"
+      },
+      {
+         "id" : "listconversions",
+         "samplerequest" : "{\"assetid\":\"101\"}",
+         "docsection" : {
+            "name" : "Asset Media",
+            "id" : "assetmedia"
+         },
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "name" : "List Conversions",
+         "url" : "/${applicationid}/services/module/asset/media/listconversions",
+         "description" : "Lists conversions"
+      },
+      {
+         "id" : "removeassetimages",
+         "samplerequest" : "{ \"assetid\":\"101\"}",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "name" : "Asset Media",
+            "id" : "assetmedia"
+         },
+         "name" : "Remove Generated Asset Images",
+         "url" : "/${applicationid}/services/module/asset/media/removeassetimages",
+         "description" : "This endpoint will remove any conversions that the system has created for the given asset."
+      },
+      {
+         "id" : "getassetversions",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "name" : "Show version history",
+         "docsection" : {
+            "id" : "moduleasset",
+            "name" : "Assets"
+         },
+         "samplerequest" : "{   \"assetid\": \"101\" }",
+         "description" : "Shows a history of all versions of this asset.",
+         "url" : "/${applicationid}/services/module/asset/versions/getrevisions"
+      },
+      {
+         "id" : "1418755308373",
+         "url" : "/${applicationid}/services/module/asset/attachments/listattachments",
+         "description" : "Lists all of the attached files for an asset.",
+         "samplerequest" : "{ \"parentsourcepath\":\"users/admin/2014/06/IMG_4838_2107.JPG\"}",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "List asset attachments",
+         "docsection" : {
+            "name" : "Asset Media",
+            "id" : "assetmedia"
+         }
+      },
+      {
+         "id" : "uploadattachment",
+         "samplerequest" : "{   \"sourcepath\": \"users/admin/2014/06/IMG_4838_2107.JPG\" }",
+         "name" : "Upload Attachment",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "uploadfile" : "true",
+         "docsection" : {
+            "id" : "assetmedia",
+            "name" : "Asset Media"
+         },
+         "url" : "/${applicationid}/services/module/asset/attachments/uploadattachment",
+         "description" : "Add file to attachments of asset"
+      },
+      {
+         "description" : "Remove attachment from asset",
+         "url" : "/${applicationid}/services/module/asset/attachments/deleteattachment",
+         "name" : "Delete Attachment",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "name" : "Asset Media",
+            "id" : "assetmedia"
+         },
+         "samplerequest" : "{  \"sourcepath\": \"users/admin/2014/06/IMG_4838_2107.JPG\" , \"fileid\": \"101\" }",
+         "id" : "deleteattachment"
+      },
+      {
+         "id" : "selectprimary",
+         "url" : "/${applicationid}/services/module/asset/attachments/selectprimary",
+         "description" : "Set primary file for asset attachments",
+         "samplerequest" : "{  \"sourcepath\": \"users/admin/2014/06/IMG_4838_2107.JPG\" , \"filename\": \"img_0002_01.jpg\" }",
+         "docsection" : {
+            "name" : "Asset Media",
+            "id" : "assetmedia"
+         },
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "name" : "Select Primary File"
+      },
+      {
+         "docsection" : {
+            "id" : "assetmedia",
+            "name" : "Asset Media"
+         },
+         "url" : "/${applicationid}/services/module/asset/attachments/uploadprimary",
+         "description" : "Set primary file for asset attachments",
+         "uploadfile" : "true",
+         "samplerequest" : "{  \"sourcepath\": \"users/admin/2014/06/IMG_4838_2107.JPG\" }",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Upload Primary Attachment",
+         "id" : "uploadprimary"
+      },
+      {
+         "samplerequest" : "{ \"id\":\"testgroup\", \"name\":\"Testers\"}",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "modulegroups",
+            "name" : "Groups"
+         },
+         "name" : "Create New Group",
+         "url" : "/${applicationid}/services/settings/groups/create",
+         "description" : "Create new group",
+         "id" : "creategroup"
+      },
+      {
+         "url" : "/${applicationid}/services/settings/groups/search",
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      ",
+         "name" : "Search for Groups",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "modulegroups",
+            "name" : "Groups"
+         },
+         "id" : "groupsearch"
+      },
+      {
+         "id" : "deletegroup",
+         "httpmethod" : {
+            "id" : "DELETE",
+            "name" : "DELETE"
+         },
+         "name" : "Delete Group",
+         "docsection" : {
+            "id" : "modulegroups",
+            "name" : "Groups"
+         },
+         "description" : "Delete group by name",
+         "url" : "/${applicationid}/services/settings/groups/data/testgroup"
+      },
+      {
+         "samplerequest" : "{\"name\":\"Test Group\"}",
+         "httpmethod" : {
+            "name" : "PUT",
+            "id" : "PUT"
+         },
+         "docsection" : {
+            "id" : "modulegroups",
+            "name" : "Groups"
+         },
+         "name" : "Update Group",
+         "url" : "/${applicationid}/services/settings/groups/data/testgroup",
+         "description" : "Change group settings",
+         "id" : "updategroup"
+      },
+      {
+         "id" : "getgroup",
+         "url" : "/${applicationid}/services/settings/groups/data/testgroup",
+         "description" : "List group data",
+         "name" : "Load Group",
+         "httpmethod" : {
+            "id" : "GET",
+            "name" : "GET"
+         },
+         "docsection" : {
+            "id" : "modulegroups",
+            "name" : "Groups"
+         }
+      },
+      {
+         "samplerequest" : "{ \"id\":\"testuser\", \"password\":\"changeme\"}",
+         "name" : "Create New User",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "id" : "1420730727080",
+            "name" : "User"
+         },
+         "url" : "/${applicationid}/services/settings/users/create",
+         "description" : "Create new user",
+         "id" : "createuser"
+      },
+      {
+         "id" : "usersearch",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "name" : "User",
+            "id" : "1420730727080"
+         },
+         "name" : "Search for Users",
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      ",
+         "url" : "/${applicationid}/services/settings/users/search"
+      },
+      {
+         "id" : "updateuser",
+         "httpmethod" : {
+            "id" : "PUT",
+            "name" : "PUT"
+         },
+         "name" : "Update User",
+         "docsection" : {
+            "id" : "1420730727080",
+            "name" : "User"
+         },
+         "samplerequest" : "{\"email\":\"myemail@domain.tld\"}",
+         "description" : "Change user settings",
+         "url" : "/${applicationid}/services/settings/users/data/testuser"
+      },
+      {
+         "id" : "getuser",
+         "httpmethod" : {
+            "id" : "GET",
+            "name" : "GET"
+         },
+         "name" : "Load User",
+         "docsection" : {
+            "name" : "User",
+            "id" : "1420730727080"
+         },
+         "description" : "List user data",
+         "url" : "/${applicationid}/services/settings/users/data/testuser"
+      },
+      {
+         "id" : "deleteuser",
+         "httpmethod" : {
+            "id" : "DELETE",
+            "name" : "DELETE"
+         },
+         "name" : "Delete User",
+         "docsection" : {
+            "name" : "User",
+            "id" : "1420730727080"
+         },
+         "description" : "Delete user by name",
+         "url" : "/${applicationid}/services/settings/users/data/testuser?id=testuser"
+      },
+      {
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "1420730727080",
+            "name" : "User"
+         },
+         "name" : "User Security Key",
+         "samplerequest" : "{ \t\"id\":\"admin\",     \"password\":\"admin\" }",
+         "description" : "Send authentication information and return entermedia key",
+         "url" : "/${applicationid}/services/authentication/getkey",
+         "id" : "authenticate"
+      },
+      {
+         "samplerequest" : "{   \"id\": \"admin\",   \"password\": \"admin\" }",
+         "docsection" : {
+            "name" : "User",
+            "id" : "1420730727080"
+         },
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "User Login",
+         "url" : "/${applicationid}/services/authentication/login",
+         "description" : "Saves a cookie so the user session remains open",
+         "id" : "userlogin"
+      },
+      {
+         "description" : "Removes the session cookie for this user",
+         "url" : "/${applicationid}/services/authentication/logout",
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "docsection" : {
+            "id" : "1420730727080",
+            "name" : "User"
+         },
+         "name" : "User Logout",
+         "id" : "userlogout"
+      },
+      {
+         "samplerequest" : "{ \"id\":\"testuser\", \"groupid\":\"testgroup\"}",
+         "docsection" : {
+            "id" : "1420730727080",
+            "name" : "User"
+         },
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Add Group to User",
+         "url" : "/${applicationid}/services/settings/users/groupadd",
+         "description" : "Add group to user",
+         "id" : "groupadd"
+      },
+      {
+         "samplerequest" : "{ \"id\":\"testuser\", \"groupid\":\"testgroup\"}",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Remove Group from User",
+         "docsection" : {
+            "id" : "1420730727080",
+            "name" : "User"
+         },
+         "url" : "/${applicationid}/services/settings/users/groupremove",
+         "description" : "Remove group from user",
+         "id" : "groupremove"
+      },
+      {
+         "url" : "/${applicationid}/services/settings/users/export/user.csv",
+         "description" : "You must search first",
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      ",
+         "name" : "Export To CSV",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "name" : "User",
+            "id" : "1420730727080"
+         },
+         "id" : "userexport1"
+      },
+      {
+         "description" : "Upgrade Server",
+         "url" : "/${applicationid}/services/system/upgradeserver",
+         "name" : "Run Application Upgrade",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "name" : "System",
+            "id" : "1418334117799"
+         },
+         "samplerequest" : "\n    \t{\n    \t\t\"serverid\": \"4\",\n    \t\t\"toupdate\": \n    \t\t\t[\"app-emshare\"]\n\t    } \n\t      ",
+         "id" : "upgradeserver"
+      },
+      {
+         "url" : "/${applicationid}/services/system/systemstatus",
+         "description" : "Shows a status report of overall cache usage",
+         "docsection" : {
+            "id" : "1418334117799",
+            "name" : "System"
+         },
+         "httpmethod" : {
+            "id" : "GET",
+            "name" : "GET"
+         },
+         "name" : "Show System Cache Status",
+         "id" : "systemstatus"
+      },
+      {
+         "samplerequest" : "{ \n    \"id\":\"testmodule\",     \n     \"name\": \"Test Module\"   \n     }",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "modules",
+            "name" : "Data Modules"
+         },
+         "name" : "Create a new Module",
+         "url" : "/${applicationid}/services/settings/modules/create",
+         "description" : "Creates a new record without an ID.",
+         "id" : "modulecreate"
+      },
+      {
+         "url" : "/${applicationid}/services/settings/modules/list",
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "name" : "List Modules",
+         "docsection" : {
+            "id" : "modules",
+            "name" : "Data Modules"
+         },
+         "id" : "modulelist"
+      },
+      {
+         "url" : "/${applicationid}/services/settings/modules/data/testmodule",
+         "name" : "Load Data ",
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "docsection" : {
+            "id" : "modules",
+            "name" : "Data Modules"
+         },
+         "id" : "moduleretrieve"
+      },
+      {
+         "id" : "moduleupdate",
+         "url" : "/${applicationid}/services/settings/modules/data/testmodule",
+         "description" : "Update data with key/values in request",
+         "samplerequest" : "{  \"name\": \"Test Module2\"\n   }",
+         "name" : "Update Data",
+         "httpmethod" : {
+            "name" : "PUT",
+            "id" : "PUT"
+         },
+         "docsection" : {
+            "name" : "Data Modules",
+            "id" : "modules"
+         }
+      },
+      {
+         "description" : "Delete Data",
+         "url" : "/${applicationid}/services/settings/modules/data/testmodule",
+         "httpmethod" : {
+            "id" : "DELETE",
+            "name" : "DELETE"
+         },
+         "docsection" : {
+            "name" : "Data Modules",
+            "id" : "modules"
+         },
+         "name" : "Delete Data",
+         "id" : "moduledelete"
+      },
+      {
+         "id" : "import1",
+         "url" : "/${applicationid}/services/settings/datamanager/listtables",
+         "name" : "List Tables",
+         "httpmethod" : {
+            "id" : "GET",
+            "name" : "GET"
+         },
+         "docsection" : {
+            "id" : "datamanager",
+            "name" : "Data Manager"
+         }
+      },
+      {
+         "id" : "import2",
+         "samplerequest" : "{\"tablename\":\"testtable\"}",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "datamanager",
+            "name" : "Data Manager"
+         },
+         "name" : "Add Table",
+         "url" : "/${applicationid}/services/settings/datamanager/addtable"
+      },
+      {
+         "url" : "/${applicationid}/services/settings/datamanager/fields/addnew",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "name" : "Add new Field",
+         "docsection" : {
+            "name" : "Data Manager",
+            "id" : "datamanager"
+         },
+         "samplerequest" : "{\"searchtype\":\"testtable\", \"newproperty\":\"testfield\"}",
+         "id" : "import6"
+      },
+      {
+         "id" : "import5",
+         "name" : "List Fields",
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "docsection" : {
+            "name" : "Data Manager",
+            "id" : "datamanager"
+         },
+         "url" : "/${applicationid}/services/settings/datamanager/fields/listfields?searchtype=testtable"
+      },
+      {
+         "name" : "Remove Field",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "name" : "Data Manager",
+            "id" : "datamanager"
+         },
+         "samplerequest" : "{  \"searchtype\": \"testtable\",\"id\":\"testfield\"}",
+         "url" : "/${applicationid}/services/settings/datamanager/fields/remove",
+         "id" : "import3"
+      },
+      {
+         "id" : "import7",
+         "url" : "/${applicationid}/services/settings/datamanager/table/deletetable",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Delete Table",
+         "docsection" : {
+            "name" : "Data Manager",
+            "id" : "datamanager"
+         },
+         "samplerequest" : "{  \"searchtype\": \"testtable\"}"
+      },
+      {
+         "id" : "import8",
+         "samplerequest" : "{\"searchtype\":\"asset\"}",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "name" : "Data Manager",
+            "id" : "datamanager"
+         },
+         "name" : "Reindex Table",
+         "url" : "/${applicationid}/services/settings/datamanager/table/reindex"
+      },
+      {
+         "samplerequest" : "\n    \t{\n    \t\t\"searchtype\": \"purpose\", \n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      ",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "id" : "datamanager",
+            "name" : "Data Manager"
+         },
+         "name" : "Export To CSV",
+         "url" : "/${applicationid}/services/settings/datamanager/table/export/purpose.csv",
+         "id" : "tableexport"
+      },
+      {
+         "description" : "Reloads xml lists to update Manager",
+         "url" : "/${applicationid}/services/settings/datamanager/reload",
+         "docsection" : {
+            "id" : "datamanager",
+            "name" : "Data Manager"
+         },
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "name" : "Reload Data",
+         "id" : "reload"
+      },
+      {
+         "url" : "/${applicationid}/services/module/order/basketadd",
+         "description" : "Add asset to basket",
+         "samplerequest" : "{\"assetid\":\"101\"}",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "name" : "Orders",
+            "id" : "moduleorder"
+         },
+         "name" : "Add to Basket",
+         "id" : "basketadd"
+      },
+      {
+         "id" : "basketremove",
+         "samplerequest" : "{\"id\":\"223\"}",
+         "name" : "Remove from Basket",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "name" : "Orders",
+            "id" : "moduleorder"
+         },
+         "url" : "/${applicationid}/services/module/order/basketremove",
+         "description" : "Remove asset from basket. Requires an orderitem id"
+      },
+      {
+         "description" : "List open orders within last 90 days",
+         "url" : "/${applicationid}/services/module/order/listopenorders",
+         "httpmethod" : {
+            "id" : "GET",
+            "name" : "GET"
+         },
+         "name" : "List Open Orders",
+         "docsection" : {
+            "id" : "moduleorder",
+            "name" : "Orders"
+         },
+         "id" : "listopenorders"
+      },
+      {
+         "samplerequest" : "{\n\t\"field\":[\"publishdestination\",\"ordertype\",\"presetid\",\"sharewithemail\"],\n\t\"publishdestination.value\":\"0\",\n\t\"presetid.value\":\"mediumimage\",\n\t\"ordertype.value\":\"email\",\n\t\"assetid\":[\"101\"],\n\t\"sharewithemail.value\":[\"cburkey.mediadb@openedit.org\"]\n\t}",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "moduleorder",
+            "name" : "Orders"
+         },
+         "name" : "Create Email Order",
+         "url" : "/${applicationid}/services/module/order/orderemail",
+         "description" : "Create order for emailing assets",
+         "id" : "emailassets"
+      },
+      {
+         "description" : "Create order for download in original format",
+         "url" : "/${applicationid}/services/module/order/orderdownload",
+         "name" : "Create Download Order",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "moduleorder",
+            "name" : "Orders"
+         },
+         "samplerequest" : "{\n\t\"field\":[\"publishdestination\",\"ordertype\",\"presetid\"],\n\t\"publishdestination.value\":\"0\",\n\t\"presetid.value\":\"0\",\n\t\"ordertype.value\":\"download\",\n\t\"assetid\":[\"101\"]\n\t}",
+         "id" : "createdownload"
+      },
+      {
+         "samplerequest" : "{\n\t\"field\":[\"publishdestination\",\"ordertype\",\"presetid\"],\n\t\"publishdestination.value\":\"local\",\n\t\"presetid.value\":\"mediumimage\",\n\t\"ordertype.value\":\"export\",\n\t\"assetid\":[\"101\"]\n\t}",
+         "name" : "Create Export Order",
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "docsection" : {
+            "id" : "moduleorder",
+            "name" : "Orders"
+         },
+         "url" : "/${applicationid}/services/module/order/orderexport",
+         "description" : "Publish Assets to Destination",
+         "id" : "publishassets"
+      },
+      {
+         "url" : "/${applicationid}/services/module/order/updateorderstatus",
+         "description" : "Check the conversion status of a pending order",
+         "samplerequest" : "{\"orderid\":\"ertFGErre3234\"}",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "id" : "moduleorder",
+            "name" : "Orders"
+         },
+         "name" : "Update Order Status",
+         "id" : "updatestatus"
+      },
+      {
+         "id" : "import10",
+         "url" : "/${applicationid}/services/settings/events/list",
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "name" : "List Events",
+         "docsection" : {
+            "name" : "Events",
+            "id" : "events"
+         }
+      },
+      {
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "name" : "Event Details",
+         "docsection" : {
+            "name" : "Events",
+            "id" : "events"
+         },
+         "samplerequest" : "{\"eventpath\":\"/media/catalogs/public/events/tests/testevent.html\"}",
+         "url" : "/${applicationid}/services/settings/events/event/details",
+         "id" : "import11"
+      },
+      {
+         "url" : "/${applicationid}/services/settings/events/event/save",
+         "samplerequest" : "{\"eventpath\":\"/media/catalogs/public/events/tests/testevent.html\",\"eventname\":\"Test Event\", \"enabled\":\"true\",\"period\":\"1m\", \"delay\":\"5s\"}",
+         "httpmethod" : {
+            "name" : "PUT",
+            "id" : "PUT"
+         },
+         "name" : "Save Event",
+         "docsection" : {
+            "name" : "Events",
+            "id" : "events"
+         },
+         "id" : "import12"
+      },
+      {
+         "url" : "/${applicationid}/services/settings/events/event/run",
+         "samplerequest" : "{\"runpath\":\"/media/catalogs/public/events/tests/testevent.html\"}",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "id" : "events",
+            "name" : "Events"
+         },
+         "name" : "Run Event",
+         "id" : "import13"
+      },
+      {
+         "id" : "importdel",
+         "samplerequest" : "{\"eventpath\":\"/media/catalogs/public/events/tests/testevent.html\"}",
+         "docsection" : {
+            "id" : "events",
+            "name" : "Events"
+         },
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Delete Details",
+         "url" : "/${applicationid}/services/settings/events/event/remove"
+      },
+      {
+         "url" : "/${applicationid}/services/lists/create/purpose",
+         "description" : "Creates a new entry in any table.  This example is a library, but changing the searchtype argument will allow you to update any arbitrary table",
+         "samplerequest" : "{   \"id\": \"101\",  \n     \"name\": \"JSON Test\"   \n      }",
+         "httpmethod" : {
+            "name" : "POST",
+            "id" : "POST"
+         },
+         "docsection" : {
+            "name" : "Data Lists",
+            "id" : "1418330376263"
+         },
+         "name" : "Create a new data object",
+         "id" : "createnewdata"
+      },
+      {
+         "id" : "searchdata",
+         "docsection" : {
+            "id" : "1418330376263",
+            "name" : "Data Lists"
+         },
+         "httpmethod" : {
+            "id" : "POST",
+            "name" : "POST"
+         },
+         "name" : "Search for Data (Any Table)",
+         "samplerequest" : "\n    \t{\n    \t    \"page\": \"1\", \n    \t    \"hitsperpage\":\"20\",\n            \"query\": \n            {\n            \t\"terms\":[{\n\t            \t\"field\": \"id\",\n\t\t\t\t\t\"operator\": \"matches\",\n\t\t\t\t\t\"value\": \"*\"\n\t\t\t\t}]\n\t         }\n\t        } \n\t      ",
+         "url" : "/${applicationid}/services/lists/search/purpose"
+      },
+      {
+         "id" : "loaddata",
+         "httpmethod" : {
+            "name" : "GET",
+            "id" : "GET"
+         },
+         "name" : "Load Data ",
+         "docsection" : {
+            "id" : "1418330376263",
+            "name" : "Data Lists"
+         },
+         "url" : "/${applicationid}/services/lists/data/purpose/101"
+      },
+      {
+         "id" : "updatedata",
+         "description" : "Update data with key/values in request",
+         "url" : "/${applicationid}/services/lists/data/purpose/101",
+         "name" : "Update Data",
+         "httpmethod" : {
+            "name" : "PUT",
+            "id" : "PUT"
+         },
+         "docsection" : {
+            "name" : "Data Lists",
+            "id" : "1418330376263"
+         },
+         "samplerequest" : "{  \"name\": \"JSON NAME CHANGE\"\n   }"
+      },
+      {
+         "url" : "/${applicationid}/services/lists/data/purpose/101",
+         "description" : "Delete Data - replace library with the table you wish to work with.  ",
+         "name" : "Delete Data",
+         "httpmethod" : {
+            "id" : "DELETE",
+            "name" : "DELETE"
+         },
+         "docsection" : {
+            "name" : "Data Lists",
+            "id" : "1418330376263"
+         },
+         "id" : "deletedata"
+      }
+   ]
+}
